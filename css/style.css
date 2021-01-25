@@ -1,0 +1,24 @@
+/*RESET CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.contenedor {
+    max-width: 64em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portada {
+    height: 45em;
+}
+
+#aboutMe {
+    height: 30em;
+}
