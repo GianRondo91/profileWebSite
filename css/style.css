@@ -1,24 +1,162 @@
-/*RESET CSS*/
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-}
-
-.contenedor {
-    max-width: 64em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.portada {
-    height: 45em;
-}
-
-#aboutMe {
-    height: 30em;
-}
+    /*RESET CSS*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    /*------CONTAINER-------*/
+    
+    .contenedor {}
+    /*------HEADER-------*/
+    
+    .header {}
+    
+    .navbar {
+        height: 3em;
+        display: grid;
+        grid-template-areas: "container-left container-right";
+    }
+    
+    .navbar a {
+        padding: 0 1em 0 1em;
+    }
+    
+    .navbar-tagName {
+        color: #F56C60;
+        font-size: 1.5em;
+    }
+    /*------CONTENT-------*/
+    
+    .content {
+        max-width: 75em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .btn a:hover {
+        color: white;
+    }
+    /*FRONT*/
+    
+    #front {
+        height: 41em;
+    }
+    
+    .portada {
+        font-family: "Raleway";
+        font-size: 2.5em;
+        color: black;
+        display: grid;
+        grid-template-areas: "portada-img portada-name";
+        margin-top: 1em;
+    }
+    
+    .portada-img {
+        background-color: #F56C60;
+    }
+    
+    .portada-img .img {
+        width: 12em;
+        margin-top: 1em;
+        margin-left: 3em;
+    }
+    
+    .portada-hello {
+        margin-top: 6.6em;
+        margin-left: 1em;
+    }
+    
+    .name {
+        color: #F56C60;
+    }
+    /*ABOUTME*/
+    
+    #aboutMe {
+        /* background-image: url("../img/floor-tile.png");*/
+        height: 42em;
+        display: grid;
+        grid-template-areas: "aboutMe-text aboutMe-img";
+    }
+    
+    .aboutMe-text {
+        width: 7em;
+    }
+    
+    .text {
+        width: 22em;
+        text-align: right;
+        position: relative;
+        top: 12em;
+        margin-left: 14em;
+    }
+    
+    .aboutMe-tittle {
+        background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
+    }
+    /*EXPERIENCE*/
+    
+    #experience {
+        height: 42em;
+        border: 1px solid;
+    }
+    
+    .slide-experience {
+        height: 40em;
+    }
+    
+    .progressBar {
+        width: 30em;
+    }
+    /*EDUCATION*/
+    
+    #education {
+        height: 40em;
+        border: 1px solid;
+    }
+    /*FORM*/
+    
+    .form {
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*------FOOTER-------*/
+    
+    .footer {
+        border-top: 0.1em solid #F2F1F1;
+        height: 7em;
+        display: flex;
+        align-items: center;
+    }
+    
+    .social-network {
+        width: 5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*-----GROUPS------*/
+    
+    #front,
+    #aboutMe,
+    #experience,
+    #education,
+    .form,
+    .footer {
+        margin-top: 1em;
+    }
+    /*------MEDIAQUERY-------*/
+    
+    @media (max-width: 1024) {
+        .navbar {
+            height: 1em;
+        }
+    }
