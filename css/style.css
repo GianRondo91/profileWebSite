@@ -15,6 +15,10 @@ a {
     color: black;
 }
 
+body {
+    font-size: 100%;
+}
+
 
 /*------CONTAINER-------*/
 
@@ -147,9 +151,8 @@ span {
 .tittle-img {
     width: 6em;
     height: 13em;
-    position: absolute;
-    top: 66em;
-    left: 57em;
+    margin-top: 13em;
+    margin-left: -4em;
 }
 
 
@@ -298,8 +301,95 @@ span {
 
 /*------MEDIAQUERY-------*/
 
-@media (max-width: 1024) {
-    .navbar {
-        height: 1em;
+@media all and (min-width: 1801px) {
+    body {
+        background-color: brown;
+    }
+    .navbar,
+    .footer {
+        width: 113em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1800px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+
+@media all and (min-width: 1008px) and (max-width: 1200px) {
+    body {
+        background-color: greenyellow;
+    }
+    .portada-img {
+        margin-left: 2em;
+    }
+    .portada-img .img {
+        width: 10em;
+        margin-left: 2em;
+    }
+    .education-text,
+    .experience-text {
+        padding-left: 3em;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 1007px) {
+    body {
+        background-color: olive;
+    }
+    /*PORTADA*/
+    #front {}
+    .portada {
+        margin-top: -4em;
+        margin-left: 1em;
+    }
+    .portada-img {}
+    .portada-hello {
+        width: 7em;
+    }
+    .portada-img .img {
+        width: 9em;
+        margin: auto;
+        padding-top: 6.5em;
+    }
+    /*ABOUTME*/
+    #aboutMe {
+        margin-left: -7em;
+        margin-bottom: 8em;
+    }
+    .aboutMe-tittle {
+        margin-left: 28em;
+    }
+    /*EDUCATION*/
+    #education {
+        height: 90em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card {
+        width: 23em !important;
+        height: 18em;
+        margin-bottom: 4em;
+    }
+    /*EXPERIENCE*/
+    .skeels {
+        display: contents;
+    }
+    .skeels .fab {
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 640px) {
+    body {
+        background-color: blue;
     }
 }
