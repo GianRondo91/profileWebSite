@@ -29,16 +29,6 @@ body {
 
 .header {}
 
-.navbar {
-    height: 3em;
-    display: grid;
-    grid-template-areas: "container-left container-right";
-}
-
-.navbar a {
-    padding: 0 1em 0 1em;
-}
-
 .navbar-tagName {
     color: grey;
     font-size: 1.5em;
@@ -100,6 +90,7 @@ span {
 .portada-hello {
     margin-top: 4.6em;
     margin-left: 1em;
+    margin-right: 1.5em;
 }
 
 .portada-hello p {}
@@ -194,7 +185,7 @@ span {
 
 .accordion {
     width: 40em;
-    margin: 13em auto 29em auto;
+    margin: 13em auto 0em auto;
 }
 
 .accordion-img {
@@ -252,7 +243,7 @@ span {
 
 .form {
     width: 30em;
-    margin: 34em auto 8em auto;
+    margin: 28em auto 8em auto;
 }
 
 
@@ -278,7 +269,6 @@ span {
 .footer {
     margin-left: auto;
     margin-right: auto;
-    width: 75em;
 }
 
 #front,
@@ -301,17 +291,49 @@ span {
 
 /*------MEDIAQUERY-------*/
 
-@media all and (min-width: 1801px) {}
+
+/* @media all and (min-width: 1801px) {}
 
 @media all and (min-width: 1201px) and (max-width: 1800px) {
     body {
         background-color: blueviolet;
     }
+} */
+
+@media all and (min-width: 1201px) {
+    .navbar,
+    .footer {
+        width: 75em;
+    }
 }
 
 @media all and (min-width: 1008px) and (max-width: 1200px) {
-    body {
+    /* body {
         background-color: greenyellow;
+    } */
+    /*CONTENEDOR*/
+    .contenedor {
+        width: 62.5em;
+    }
+    /*HEADER*/
+    .navbar,
+    .footer {
+        width: 100%;
+    }
+    /*FRONT*/
+    .portada {
+        font-size: 2em;
+        margin: 3em 0em 0em 3em;
+    }
+    .portada-img {}
+    /*EXPERIENCE*/
+    .skeels {
+        position: static;
+        padding-top: 7.5em;
+        padding-left: 2em;
+    }
+    .accordion {
+        margin-top: 4em;
     }
 }
 
