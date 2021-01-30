@@ -18,6 +18,13 @@ Para realizar mi web personal, utilice de bootstrap los componentes:
 # RESPONSIVE
 La página web es totalmente responsive en todas sus dimensiones y para diferente dispositivos.
 
+![Movil](img/Slide2.JPG?raw=true)
+
+![Pc](img/Slide3.JPG?raw=true)
+
+![Portatil](img/Slide1.JPG?raw=true)
+
+
 
 # Licencia 📄
 
