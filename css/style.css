@@ -1,428 +1,395 @@
-    /*RESET CSS*/
-    
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        border: none;
-        outline: none;
-        font-family: 'Noto Sans', sans-serif;
+/*RESET CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*------CONTENT-------*/
+
+.content {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #F79687;
+    border: none;
+}
+
+.navbar-nav {
+    padding-right: 2em;
+}
+
+
+/*FRONT*/
+
+#front {
+    height: 41em;
+    padding-top: 0em;
+}
+
+.portada {
+    font-size: 2.5em;
+    color: black;
+    display: grid;
+    grid-template-areas: "portada-img portada-name";
+}
+
+.portada-img {
+    background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
+}
+
+.portada-img .img {
+    width: 12em;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.portada-hello {
+    margin-top: 4.6em;
+    margin-left: 1em;
+    margin-right: 1.5em;
+}
+
+.name {
+    color: #F56C60;
+}
+
+
+/*ABOUTME*/
+
+#aboutMe {
+    height: 42em;
+    display: grid;
+    grid-template-areas: "aboutMe-text aboutMe-img";
+}
+
+.aboutMe-tittle {
+    display: flex;
+    width: 13em;
+    margin-left: 24em;
+    margin-top: 5.5em;
+}
+
+.about,
+.me {
+    display: block;
+    font-size: 3.5em;
+    margin-left: 1em;
+}
+
+.aboutMe-text {
+    width: 7em;
+}
+
+.tittle-about {
+    margin-left: auto;
+}
+
+.text {
+    width: 22em;
+    text-align: right;
+    position: relative;
+    top: 7em;
+    margin-left: 8em;
+    font-size: 1.2em;
+}
+
+.tittle-img {
+    width: 6em;
+    height: 13em;
+    margin-top: 13em;
+    margin-left: -4em;
+}
+
+
+/*EXPERIENCE*/
+
+#experience {
+    height: 42em;
+    position: relative;
+}
+
+.experience-text {
+    display: block;
+    margin-left: 4em;
+    float: left;
+}
+
+.exp-text-part {
+    display: block;
+    font-size: 4em;
+    color: #414a6b;
+}
+
+.skeels {
+    position: absolute;
+    left: 35em;
+    top: 9em;
+    display: flex;
+    letter-spacing: 3.2em;
+    color: #414a6b;
+}
+
+.skeels .fab {
+    font-size: 3em;
+}
+
+.skeels img {
+    width: 3.5em;
+}
+
+.accordion {
+    width: 40em;
+    margin: 13em auto 0em auto;
+}
+
+.accordion-img {
+    width: 29em;
+    display: flex;
+    margin: 1em auto 1em auto;
+}
+
+
+/*EDUCATION*/
+
+#education {
+    height: 40em;
+    position: relative;
+}
+
+.education-text {
+    margin-left: 4em;
+    display: block;
+}
+
+.text-part {
+    display: block;
+    font-size: 4em;
+    color: #F56C60;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.card {
+    margin: 0em 2em 8em 3em;
+    width: 17em;
+    text-align: center;
+}
+
+.card-img {
+    border-bottom: 0.1em solid #F2F1F1;
+    height: 9em;
+    display: flex;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*FORM*/
+
+.form {
+    width: 30em;
+    margin: 20em auto 8em auto;
+}
+
+
+/*------FOOTER-------*/
+
+.footer {
+    border-top: 0.1em solid #F2F1F1;
+    height: 7em;
+    display: flex;
+    align-items: center;
+}
+
+.social-network {
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-----GROUPS------*/
+
+.navbar,
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80em;
+}
+
+#front,
+#aboutMe,
+#experience,
+#education,
+.footer {
+    padding-top: 3em;
+    width: 78.5em;
+}
+
+.text-part,
+.exp-text-part,
+.about,
+.me {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+/*------MEDIAQUERY-------*/
+
+@media all and (min-width: 1008px) and (max-width: 1200px) {
+    .navbar-nav {
+        padding-right: 1em;
     }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    /*------CONTENT-------*/
-    
-    .content {
-        max-width: 75em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .btn a:hover {
-        color: white;
-    }
-    
-    .btn-outline-secondary:hover {
-        background-color: #F79687;
-        border: none;
-    }
-    /*FRONT*/
-    
-    #front {
-        height: 41em;
-        padding-top: 0em;
-    }
-    
-    .portada {
-        font-size: 2.5em;
-        color: black;
-        display: grid;
-        grid-template-areas: "portada-img portada-name";
-    }
-    
-    .portada-img {
-        background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
-    }
-    
-    .portada-img .img {
-        width: 12em;
-        margin-top: 1em;
-        margin-left: 3em;
-    }
-    
-    .portada-hello {
-        margin-top: 4.6em;
-        margin-left: 1em;
-        margin-right: 1.5em;
-    }
-    
-    .name {
-        color: #F56C60;
-    }
-    /*ABOUTME*/
-    
-    #aboutMe {
-        height: 42em;
-        display: grid;
-        grid-template-areas: "aboutMe-text aboutMe-img";
-    }
-    
-    .aboutMe-tittle {
-        display: flex;
-        width: 13em;
-        margin-left: 24em;
-        margin-top: 5.5em;
-    }
-    
-    .about,
-    .me {
-        display: block;
-        font-size: 3.5em;
-        margin-left: 1em;
-    }
-    
-    .aboutMe-text {
-        width: 7em;
-    }
-    
-    .tittle-about {
-        margin-left: auto;
-    }
-    
-    .text {
-        width: 22em;
-        text-align: right;
-        position: relative;
-        top: 7em;
-        margin-left: 8em;
-        font-size: 1.2em;
-    }
-    
-    .tittle-img {
-        width: 6em;
-        height: 13em;
-        margin-top: 13em;
-        margin-left: -4em;
-    }
-    /*EXPERIENCE*/
-    
-    #experience {
-        height: 42em;
-        position: relative;
-    }
-    
-    .experience-text {
-        display: block;
-        margin-left: 4em;
-        float: left;
-    }
-    
-    .exp-text-part {
-        display: block;
-        font-size: 4em;
-        color: #414a6b;
-    }
-    
-    .skeels {
-        position: absolute;
-        left: 35em;
-        top: 9em;
-        display: flex;
-        letter-spacing: 3.2em;
-        color: #414a6b;
-    }
-    
-    .skeels .fab {
-        font-size: 3em;
-    }
-    
-    .skeels img {
-        width: 3.5em;
-    }
-    
-    .accordion {
-        width: 40em;
-        margin: 13em auto 0em auto;
-    }
-    
-    .accordion-img {
-        width: 29em;
-        display: flex;
-        margin: 1em auto 1em auto;
-    }
-    /*EDUCATION*/
-    
-    #education {
-        height: 40em;
-        position: relative;
-    }
-    
-    .education-text {
-        margin-left: 4em;
-        display: block;
-    }
-    
-    .text-part {
-        display: block;
-        font-size: 4em;
-        color: #F56C60;
-    }
-    
-    .cards {
-        display: flex;
-        justify-content: center;
-        margin-top: 3em;
-    }
-    
-    .card {
-        margin: 0em 2em 8em 3em;
-        width: 17em;
-        text-align: center;
-    }
-    
-    .card-img {
-        border-bottom: 0.1em solid #F2F1F1;
-        height: 9em;
-        display: flex;
-        align-items: center;
-    }
-    
-    .card-img-top {
-        width: 7em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /*FORM*/
-    
-    .form {
-        width: 30em;
-        margin: 28em auto 8em auto;
-    }
-    /*------FOOTER-------*/
-    
-    .footer {
-        border-top: 0.1em solid #F2F1F1;
-        height: 7em;
-        display: flex;
-        align-items: center;
-    }
-    
-    .social-network {
-        width: 5em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /*-----GROUPS------*/
-    
-    .navbar,
-    .footer {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80em;
-    }
-    
+    #content,
     #front,
     #aboutMe,
-    #experience,
     #education,
+    #experience,
+    .form {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*CONTENEDOR*/
+    .contenedor {
+        width: 62.5em;
+    }
+    /*HEADER*/
+    .navbar,
     .footer {
-        padding-top: 3em;
-        width: 78.5em;
+        width: 100%;
     }
-    
-    .text-part,
-    .exp-text-part,
-    .about,
-    .me {
-        font-weight: bold;
-        letter-spacing: 0.1em;
+    /*FRONT*/
+    .portada {
+        font-size: 2em;
+        margin: 3em 0em 0em 3em;
     }
-    /*------MEDIAQUERY-------*/
-    
-    @media all and (min-width: 1008px) and (max-width: 1200px) {
-        body {
-            background-color: greenyellow;
-        }
-        /*CONTENEDOR*/
-        .contenedor {
-            width: 62.5em;
-        }
-        /*HEADER*/
-        .navbar,
-        .footer {
-            width: 100%;
-        }
-        /*FRONT*/
-        .portada {
-            font-size: 2em;
-            margin: 3em 0em 0em 3em;
-        }
-        /*EXPERIENCE*/
-        .skeels {
-            position: static;
-            padding-top: 7.5em;
-            padding-left: 2em;
-        }
-        .accordion {
-            margin-top: 4em;
-        }
+    /*EXPERIENCE*/
+    .skeels {
+        position: static;
+        padding-top: 7.5em;
+        padding-left: 2em;
     }
-    
-    @media all and (min-width: 641px) and (max-width: 1007px) {
-        /* body {
-        background-color: olive;
-    } */
-        /*CONTENEDOR*/
-        .contenedor {
-            width: 40em;
-        }
-        /*FRONT*/
-        .portada {
-            font-size: 2em;
-            height: 16em;
-        }
-        .portada-img .img {
-            width: 12em;
-            margin: 0em;
-            padding-top: 1em;
-            background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
-        }
-        .portada-hello {
-            width: 9em;
-        }
-        /*ABOUTME*/
-        .aboutMe-text {
-            width: 4em;
-        }
-        .aboutMe-text .text {
-            top: 7.5em;
-            margin-left: 2em;
-        }
-        /*EDUCATION*/
-        #education {
-            height: 90em;
-        }
-        .cards {
-            display: grid;
-        }
-        .card {
-            width: 21em;
-            height: 20em;
-            margin-bottom: 4em;
-        }
-        /*EXPERIENCE*/
-        .skeels {
-            padding-top: 7.5em;
-            top: 8em;
-            left: 4em;
-        }
-        .experience-text {
-            margin-right: 14em;
-        }
-        .accordion {
-            margin-top: 20em;
-            left: 2em;
-            width: 47em;
-        }
+    .accordion {
+        margin-top: 4em;
     }
-    
-    @media all and (max-width: 640px) {
-        body {
-            background-color: blue;
-        }
-        /*CONTENEDOR*/
-        #front {
-            width: auto;
-        }
-        .navbar-tagName,
-        .navbar-toggler {
-            font-size: xx-large;
-        }
-        .nav-item {
-            font-size: x-large;
-        }
-        /*FRONT*/
-        .portada {
-            background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
-            width: 24em;
-        }
-        .portada-img {
-            background: none;
-        }
-        .portada-img .img {
-            width: 12em;
-            margin: 0em;
-            padding-top: 1em;
-        }
-        .portada-hello {
-            width: 9em;
-        }
-        /*ABOUTME*/
-        #aboutMe {
-            height: 55em;
-            width: auto;
-        }
-        .aboutMe-tittle {
-            margin-left: 36em;
-            margin-top: 14em;
-        }
-        .aboutMe-text {
-            width: 4em;
-        }
-        .aboutMe-text .text {
-            top: 9.5em;
-            margin-left: 2em;
-            font-size: x-large;
-        }
-        /*EDUCATION*/
-        #education {
-            height: 92em;
-            width: 59em;
-        }
-        .cards {
-            display: grid;
-        }
-        .card {
-            width: 37em;
-            height: 20em;
-            margin-bottom: 4em;
-        }
-        /*EXPERIENCE*/
-        #experience {
-            width: 60em;
-        }
-        .skeels {
-            padding-top: 7.5em;
-            top: 8em;
-            left: 4em;
-        }
-        .experience-text {
-            margin-right: 14em;
-        }
-        .accordion {
-            margin-top: 20em;
-            left: 2em;
-            width: 47em;
-        }
-        .navbar,
-        .footer {
-            width: 100%;
-        }
-        /*FORM*/
-        .form {
-            width: 25em;
-            margin: 28em 6em 8em 16em;
-        }
+    .form {
+        width: 31em;
+        margin-top: 19em;
     }
-    
-    @media all and (min-width: 640px) {
-        /*HEADER*/
-        .navbar,
-        .footer {
-            width: 100%;
-        }
+}
+
+@media all and (max-width: 1007px) {
+    .navbar,
+    .footer {
+        width: auto;
     }
+    #content,
+    #front,
+    #aboutMe,
+    #education,
+    #experience,
+    .form {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portada {
+        background: linear-gradient(to right, #d5c6b4 0%, #ece5db 100%);
+        display: block;
+        font-size: x-large;
+        height: inherit;
+    }
+    .portada-img {
+        background: none;
+    }
+    .portada-hello {
+        margin-top: 2.6em;
+        text-align: center;
+    }
+    /*CONTENEDOR*/
+    .content {
+        max-width: 31em;
+    }
+    .footer {
+        position: absolute;
+    }
+    #aboutMe {
+        display: block;
+        height: 60em;
+    }
+    .aboutMe-text .text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17em;
+        width: 24em;
+    }
+    .aboutMe-tittle {
+        margin-top: -38em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #education {
+        height: auto;
+    }
+    .cards {
+        display: contents;
+    }
+    .card {
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #experience {
+        height: auto;
+        margin-top: 6em;
+    }
+    .skeels {
+        left: 1.5em;
+        font-size: small;
+        margin-top: 11em;
+    }
+    .accordion {
+        width: 29em;
+        margin-top: 19em;
+    }
+    .form {
+        width: 22em;
+        margin-top: 9em;
+    }
+    .footer {
+        position: relative;
+        align-content: center;
+        align-items: center;
+        display: block;
+    }
+}
