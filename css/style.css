@@ -98,7 +98,7 @@ span {
 }
 
 .portada-hello {
-    margin-top: 6.6em;
+    margin-top: 4.6em;
     margin-left: 1em;
 }
 
@@ -175,21 +175,6 @@ span {
     color: #414a6b;
 }
 
-.progressBar {
-    width: 30em;
-}
-
-.w-50 {
-    width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2em;
-}
-
-.carousel-img {
-    width: 48em !important;
-}
-
 .skeels {
     position: absolute;
     left: 35em;
@@ -205,6 +190,17 @@ span {
 
 .skeels img {
     width: 3.5em;
+}
+
+.accordion {
+    width: 40em;
+    margin: 13em auto 29em auto;
+}
+
+.accordion-img {
+    width: 29em;
+    display: flex;
+    margin: 1em auto 1em auto;
 }
 
 
@@ -256,10 +252,7 @@ span {
 
 .form {
     width: 30em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 13em;
-    margin-bottom: 5em;
+    margin: 34em auto 8em auto;
 }
 
 
@@ -281,6 +274,13 @@ span {
 
 /*-----GROUPS------*/
 
+.navbar,
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em;
+}
+
 #front,
 #aboutMe,
 #experience,
@@ -301,17 +301,7 @@ span {
 
 /*------MEDIAQUERY-------*/
 
-@media all and (min-width: 1801px) {
-    body {
-        background-color: brown;
-    }
-    .navbar,
-    .footer {
-        width: 113em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+@media all and (min-width: 1801px) {}
 
 @media all and (min-width: 1201px) and (max-width: 1800px) {
     body {
@@ -323,68 +313,11 @@ span {
     body {
         background-color: greenyellow;
     }
-    .portada-img {
-        margin-left: 2em;
-    }
-    .portada-img .img {
-        width: 10em;
-        margin-left: 2em;
-    }
-    .education-text,
-    .experience-text {
-        padding-left: 3em;
-    }
 }
 
 @media all and (min-width: 641px) and (max-width: 1007px) {
     body {
         background-color: olive;
-    }
-    /*PORTADA*/
-    #front {}
-    .portada {
-        margin-top: -4em;
-        margin-left: 1em;
-    }
-    .portada-img {}
-    .portada-hello {
-        width: 7em;
-    }
-    .portada-img .img {
-        width: 9em;
-        margin: auto;
-        padding-top: 6.5em;
-    }
-    /*ABOUTME*/
-    #aboutMe {
-        margin-left: -7em;
-        margin-bottom: 8em;
-    }
-    .aboutMe-tittle {
-        margin-left: 28em;
-    }
-    /*EDUCATION*/
-    #education {
-        height: 90em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .cards {
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .card {
-        width: 23em !important;
-        height: 18em;
-        margin-bottom: 4em;
-    }
-    /*EXPERIENCE*/
-    .skeels {
-        display: contents;
-    }
-    .skeels .fab {
-        font-size: 2em;
     }
 }
 
